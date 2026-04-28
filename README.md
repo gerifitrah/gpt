@@ -1,21 +1,15 @@
-# Geri Fitrah Portfolio Website
+# Portfolio Website Starter
 
-A modern, responsive one-page portfolio built with HTML, CSS, and vanilla JavaScript.
+A clean and responsive personal portfolio website built with plain HTML, CSS, and JavaScript.
 
-## Run locally
+## Quick start
 
-1. Open `index.html` directly, or
-2. Serve via local HTTP:
+1. Open `index.html` in your browser.
+2. Replace placeholder text (`Your Name`, project titles, etc.) with your own details.
+3. Update links for your real demos and social profiles.
 
-```bash
-python3 -m http.server 8000
-```
+## Customize
 
-Then open `http://localhost:8000`.
-
-## Personalization checklist
-
-- Update profile summary and location in `script.js` (`profileData` object).
-- Replace project cards in `index.html` with your real portfolio items.
-- Add your social/profile links in the contact section.
-- Tweak theme colors in `styles.css`.
+- **Colors & style:** edit `styles.css`
+- **Content:** edit `index.html`
+- **Interactions:** edit `script.js`
