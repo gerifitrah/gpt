@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geri Fitrah | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Geri Fitrah — product-focused web developer and designer building user-centered digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">GF</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container section">
+        <div>
+          <p class="tag">Available for freelance & full-time roles</p>
+          <h1>Hi, I'm <span>Geri Fitrah</span>.</h1>
+          <p class="lead" id="summaryText"></p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">See My Work</a>
+            <a class="btn ghost" href="#contact">Let's Talk</a>
+          </div>
+        </div>
+        <aside class="info-card">
+          <h2>Quick Info</h2>
+          <ul>
+            <li><strong>Location:</strong> <span id="locationText">Bandung, Indonesia</span></li>
+            <li><strong>Role Focus:</strong> <span>Web Development & Product Design</span></li>
+            <li><strong>Status:</strong> <span>Open to opportunities</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="container section" id="about">
+        <h2>About</h2>
+        <p>
+          I enjoy building fast, clean, and user-friendly digital products. My focus is combining
+          practical development with thoughtful UI/UX so products are both usable and visually
+          strong.
+        </p>
+      </section>
+
+      <section class="container section" id="skills">
+        <h2>Core Skills</h2>
+        <div class="chips">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>UI Prototyping</span>
+          <span>Product Thinking</span>
+        </div>
+      </section>
+
+      <section class="container section" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <p class="card-tag">Education Tech</p>
+            <h3>Emotion-Aware Learning Recommendation App</h3>
+            <p>
+              Concept and implementation focused on detecting student facial emotion to improve
+              how learning material is delivered.
+            </p>
+          </article>
+          <article class="card">
+            <p class="card-tag">Portfolio</p>
+            <h3>Modern Personal Branding Site</h3>
+            <p>
+              Fast and responsive portfolio template emphasizing clear messaging, trust, and a
+              strong call to action.
+            </p>
+          </article>
+          <article class="card">
+            <p class="card-tag">Design</p>
+            <h3>UI Exploration for Product Pages</h3>
+            <p>
+              Interface concepts for commerce and SaaS experiences with mobile-first layouts and
+              accessibility-minded structure.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="contact">
+        <h2>Contact</h2>
+        <p>If you want to collaborate, feel free to send a message.</p>
+        <form class="contact-form" id="contactForm">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-note" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Geri Fitrah. Built with intention.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
